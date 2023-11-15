@@ -1,0 +1,13 @@
+.DatePicker {
+  > span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+  .DatePicker__input {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 20% 40% 30%;
+    gap: 5%;
+  }
+}

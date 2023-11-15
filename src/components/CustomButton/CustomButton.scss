@@ -1,0 +1,17 @@
+.CustomButton {
+  font-size: 18px;
+  font-weight: 600;
+  width: auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.CustomButton:hover {
+  filter: brightness(1.2);
+}

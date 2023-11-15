@@ -1,0 +1,33 @@
+.LoginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ForgotPasswordForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPassword {
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: blue !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active,
+  :visited {
+    color: inherit; /* Màu sẽ giữ nguyên như màu mặc định */
+    text-decoration: none; /* Vô hiệu hóa gạch chân (underline) */
+    /* Thêm các thuộc tính CSS khác nếu cần */
+  }
+}

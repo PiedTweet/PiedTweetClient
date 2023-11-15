@@ -1,0 +1,58 @@
+.Home {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+  position: relative;
+  > .nav__container {
+    // position: absolute;
+    // border: 1px solid black;
+    > .logo-container {
+      width: auto;
+      height: 4rem;
+      > img {
+        width: auto;
+        height: 100%;
+      }
+    }
+    margin: 1vh auto 2vh;
+    > .nav__list {
+      list-style: none;
+      padding: 0;
+      > .nav__item {
+        margin-bottom: 2rem;
+        > a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: black;
+          // &.active {
+          //   color: deepskyblue;
+          // }
+          &:hover {
+            color: deepskyblue;
+          }
+        }
+      }
+    }
+  }
+  > .post__container {
+    margin: 0;
+    height: 100vh;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    > h1 {
+      margin: 1.5vh 0 0 0;
+      padding-left: 1rem;
+      padding-bottom: 1.5vh;
+      border-bottom: 1px solid gray;
+    }
+  }
+  > .discover__container {
+    // border: 1px solid black;
+    margin: 1.5vh 0 0 1rem;
+  }
+}
