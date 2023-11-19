@@ -1,4 +1,8 @@
-export const Day = [
+import { Autocomplete, TextField } from '@mui/material'
+import React from 'react'
+import './DatePicker.scss'
+
+const Day = [
   '1',
   '2',
   '3',
@@ -32,22 +36,22 @@ export const Day = [
   '31'
 ]
 
-export const Month = [
-  { label: 'January', value: 0 },
-  { label: 'February', value: 1 },
-  { label: 'March', value: 2 },
-  { label: 'April', value: 3 },
-  { label: 'May', value: 4 },
-  { label: 'June', value: 5 },
-  { label: 'July', value: 6 },
-  { label: 'August', value: 7 },
-  { label: 'September', value: 8 },
-  { label: 'October', value: 9 },
-  { label: 'November', value: 10 },
-  { label: 'December', value: 11 }
+const Month = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
 ]
 
-export const Year = [
+const Year = [
   '1900',
   '1901',
   '1902',
@@ -172,3 +176,34 @@ export const Year = [
   '2021',
   '2022'
 ]
+
+export default function DatePicker({ label, onClick }) {
+  return (
+    <div className='DatePicker'>
+      <span>{label}</span>
+      <div className='DatePicker__input'>
+        <Autocomplete
+          disablePortal
+          id='day'
+          options={Day}
+          sx={{ fullWidth: true }}
+          renderInput={(params) => <TextField {...params} label='Day' />}
+        />
+        <Autocomplete
+          disablePortal
+          id='month'
+          options={Month}
+          sx={{ fullWidth: true }}
+          renderInput={(params) => <TextField {...params} label='Month' />}
+        />
+        <Autocomplete
+          disablePortal
+          id='year'
+          options={Year}
+          sx={{ fullWidth: true }}
+          renderInput={(params) => <TextField {...params} label='Year' />}
+        />
+      </div>
+    </div>
+  )
+}
