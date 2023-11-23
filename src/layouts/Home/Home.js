@@ -54,6 +54,7 @@ export default function Home() {
       <div className="nav__container">
         <div className="logo-container">
           <img src={LogoPied} alt="logo" />
+          <span className="logo">Pied Piper</span>
         </div>
         <ul className="nav__list">
           <li className="nav__item">
